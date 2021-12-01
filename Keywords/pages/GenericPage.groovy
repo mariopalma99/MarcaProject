@@ -10,9 +10,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 
 public class GenericPage {
-	
+
 	private TestObject btnAcceptCookies
-	
+
 	@Keyword
 	def clickAcceptCookies() {
 		btnAcceptCookies = findTestObject('GenericPage/btnAcceptCookies')
@@ -20,7 +20,7 @@ public class GenericPage {
 			WebUI.click(btnAcceptCookies)
 		}
 	}
-	
+
 	@Keyword
 	def printFile(List<String> values) {
 		PrintWriter pw = new PrintWriter("Data Files/teamsNames.txt")

@@ -14,5 +14,7 @@ genericPage.clickAcceptCookies()
 
 // get teams and save in file
 def indexPage = new IndexPage()
-List<String> teamsNames = indexPage.getTeamsNames("icon-teams horizontal")
+List<String> teamsNames = indexPage.getTeamsNames()
 genericPage.printFile(teamsNames)
+
+WebUI.closeBrowser()

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//header[@data-ue-model=&quot;portada portada&quot;]//ul[@class=&quot;${className}&quot;]//a</value>
+         <value>//header[@data-ue-model=&quot;portada portada&quot;]//ul[@class=&quot;icon-teams horizontal&quot;]//a</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

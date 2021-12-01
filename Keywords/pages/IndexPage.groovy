@@ -23,13 +23,13 @@ import org.openqa.selenium.WebElement
 import java.util.List
 
 public class IndexPage {
-	
+
 	private TestObject txtTeamName
-	
+
 	@Keyword
-	def List<String> getTeamsNames(String className) {
+	def List<String> getTeamsNames() {
 		List<String> values = new ArrayList<String>()
-		txtTeamName = findTestObject('IndexPage/txtTeamName', [('className') : className])
+		txtTeamName = findTestObject('IndexPage/txtTeamName')
 		WebUI.verifyElementPresent(txtTeamName, GlobalVariable.TIMEOUT)
 		List<WebElement> elements = WebUI.findWebElements(txtTeamName, GlobalVariable.TIMEOUT)
 		for(WebElement element: elements) {
